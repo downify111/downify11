@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Online Video Downloader</title>
+  <!-- ✅ Popunder Ad (Loaded after page load) -->
+  <script>
+    window.addEventListener('load', function() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = '//pl26801920.profitableratecpm.com/83/f9/3b/83f93b0563826dcb38b6982137cb1267.js';
+      document.head.appendChild(script);
+    });
+  </script>
+  <!-- ✅ Social Bar / Native Banner (Loaded after 5 seconds) -->
+  <script>
+    setTimeout(function() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = '//pl26800112.profitableratecpm.com/4d/6b/e2/4d6be212f29d8f3907b761251b53ffd8.js';
+      document.head.appendChild(script);
+    }, 5000);
+  </script>
+  <!-- ✅ 320x50 Banner -->
+  <script type="text/javascript">
+    atOptions = {
+      'key' : '3bd3381e6cfad2d0da00cefefafd7abf',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/3bd3381e6cfad2d0da00cefefafd7abf/invoke.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+    }
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .arrow {
+      font-size: 50px;
+      color: green;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      border: 2px solid #a4e043;
+      font-size: 16px;
+    }
+    .download-btn {
+      display: inline-block;
+      background: #7ed31c;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 12px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    .download-btn:hover {
+      background: #5da80f;
+    }
+    .link-buttons a {
+      display: block;
+      background: #e9ffe5;
+      margin: 5px 0;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      border-radius: 5px;
+    }
+    .loading {
+      display: none;
+      margin-top: 10px;
+    }
+    .ad-container {
+      margin: 20px 0;
+      min-height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">savefrom.net</div>
+    <div class="arrow">⬇️</div>
+    <h2>Free Online Video Downloader</h2>
+    <div class="ad-container" id="top-banner-ad"></div>
+    <input type="text" id="videoUrl" placeholder="Paste YouTube, Facebook, etc. URL here" />
+    <a id="downloadLink" class="download-btn">Download Now</a>
+    <div class="loading" id="loading">Preparing download...</div>
+    <p style="margin-top: 10px;" id="status"></p>
+    <div class="ad-container" id="container-c5074c8e8ff6ef40b8465c4eba4f5024"></div>
+    <script async="async" data-cfasync="false" src="//pl26800163.profitableratecpm.com/c5074c8e8ff6ef40b8465c4eba4f5024/invoke.js"></script>
+    <div class="link-buttons">
+      <a href="#" class="platform-btn" data-platform="youtube">▶️ youtube.com</a>
+      <a href="#" class="platform-btn" data-platform="facebook">📘 facebook.com</a>
+      <a href="#" class="platform-btn" data-platform="instagram">📸 instagram.com</a>
+      <a href="#" class="platform-btn" data-platform="twitter">🐦 twitter.com</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById('downloadLink').addEventListener('click', async function() {
+      const videoUrl = document.getElementById('videoUrl').value.trim();
+      const loadingElement = document.getElementById('loading');
+      const statusElement = document.getElementById('status');
+      if (!videoUrl) {
+        statusElement.innerText = "Please enter a video URL first";
+        statusElement.style.color = "red";
+        return;
+      }
+      try {
+        loadingElement.style.display = "block";
+        statusElement.innerText = "";
+        if (!localStorage.getItem('adShown')) {
+          window.open("https://www.profitableratecpm.com/mueyecaj?key=f1934df9d95d4e12e60c3e9a1b8b77b3", "_blank");
+          localStorage.setItem('adShown', 'true');
+          statusElement.innerText = "Please wait, preparing your download...";
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        }
+        const downloadLink = document.createElement('a');
+        downloadLink.href = await getVideoDownloadUrl(videoUrl);
+        downloadLink.download = 'video.mp4';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+        statusElement.innerText = "Download started!";
+        statusElement.style.color = "green";
+      } catch (error) {
+        statusElement.innerText = "Error: " + error.message;
+        statusElement.style.color = "red";
+      } finally {
+        loadingElement.style.display = "none";
+      }
+    });
+    document.querySelectorAll('.platform-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const platform = this.getAttribute('data-platform');
+        document.getElementById('videoUrl').value = `https://${platform}.com/`;
+        document.getElementById('videoUrl').focus();
+      });
+    });
+    async function getVideoDownloadUrl(url) {
+      return URL.createObjectURL(new Blob(["Simulated video content"], { type: "video/mp4" }));
+    }
+  </script>
+</body>
+</html>
